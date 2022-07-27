@@ -1,0 +1,66 @@
+*{
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.prompt{
+    background-color: #FFE3C3;
+    border: 2px solid #FFE3C3;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "label-city input-city submit-btn";
+}
+
+.prompt > input{
+    border: none;
+    height: 80%;
+    width: 90%;
+    justify-self: center;
+    background: inherit;
+
+}
+
+.prompt > .label-city{
+    padding: 10px;
+    border-right: 2px solid #b69c85;
+}
+
+.prompt > .submit-btn{
+    padding: 10px;
+    background: inherit;
+    border: none;
+    font-size: larger;
+}
+
+.prompt > .submit-btn:active{
+    border-radius: inherit;
+    background: #b69c85;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.main{
+    padding: 10px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

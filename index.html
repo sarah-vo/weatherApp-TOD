@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 class="header">Wendy's Weather</h1>
+    <form class="prompt" name="prompt">
+        <label for="city" class="label label-city">Location</label>
+        <input name="city" id="city" class="input input-city">
+        <button onclick="event.preventDefault(); fetchWeatherAPI()" class="submit-btn">Submit</button>
+    </form>
+
+    <div class="main">Waiting...</div>
+</body>
+</html>
